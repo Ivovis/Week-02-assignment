@@ -1,0 +1,34 @@
+The Plan... 
+
+Create the basic files - html css js
+add containers to the html - add the js and css
+
+Dig out a set of random pics from the clip art I made last year
+ 2 from three groups (there's a couple of thousand to pic from)
+ ensure two of the same kind are different enough to need different alt texts
+ place them into a media folder in the project root
+
+create a mobile wireframe
+
+create a desktop wireframe
+
+js - create a media array to hold information about the gallery contents
+    including filename and alternative text for each and the image index within the array    
+    I could include a function here to loop through the array and update the id's to match the correct index, this would allow adding images to the gallery later
+
+create a function to update the background image in the background container
+    look for existing elements that have a class name used for the background image -> get its ID
+    create the image using the index provided by the thumbnail listener - give it a classname "backgroundClass" and an ID of the index
+    if an existing element was found it should be removed (maybe used for a transition effect later?)
+
+Create a function that can populate the thumbnail container with images contained within the media array
+    use a loop to cycle through the array
+    create an element a or button
+    attach the image
+    attach the alt text
+    attach a listener for mouse click that will call the the update background function passing the array index of the image to use for the update
+        
+At this point the css is mostly undefined but I want to have the call backs working and then work on the CSS to present what is needed
+
+       
+Note this would normally be excluded from git
