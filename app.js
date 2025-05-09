@@ -1,4 +1,3 @@
-const doc = Document;
 const mediaArray = [
   {
     imageID: 0,
@@ -41,14 +40,36 @@ function updateBackground(idIndex) {
   newImage.setAttribute("class", "theBackground");
   // set an id to the index
   newImage.setAttribute("id", mediaArray[idIndex].imageID);
-
+  // TODO temp image size until CSS done
+  newImage.setAttribute("width", "200");
   // add it to the container
   document.getElementById("backgroundID").appendChild(newImage);
 
   // remove old image if it exists (or use for transition later)
 }
 
-updateBackground(2);
+function populateThumbnails() {
+  // get the thumbnail container
+  let tc = document.getElementById("thumbnailsID");
+
+  // loop through all the images in the array and add each one to the container
+  for (let i = 0; i < mediaArray.length; i++) {
+    // create the element to hold the thumbnail
+    let newThumb = document.createElement("img");
+    // set the src
+    newThumb.setAttribute("src", mediaArray[i].imageSrc);
+    // TODO temp image size until CSS done
+    newThumb.setAttribute("width", "50");
+    document.getElementById("thumbnailsID").appendChild(newThumb);
+  }
+}
+
+// testing
+populateThumbnails();
+updateBackground(1);
+
+// testing
+//updateBackground(2);
 
 // list of media still to add to the media array
 //
