@@ -3,3 +3,42 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+#thumbnailsID {
+  height: 80vh;
+  width: 20vw;
+
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  z-index: 100;
+
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  background-color: white;
+  left: 10%;
+  transform: translateY(10vh);
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.body#thumbnails {
+  padding-top: 10vh;
+}
+.thumbnail {
+  width: 20vw;
+  gap: 5px;
+
+  background-color: red;
+  cursor: pointer;
+}
+
+#backgroundID {
+  height: 100vh;
+  width: 100wh;
+  object-fit: fill;
+  color: black;
+  background-color: blue;
+}
