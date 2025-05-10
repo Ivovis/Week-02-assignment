@@ -23,11 +23,9 @@ function updateBackground(idIndex) {
     return;
   }
 
-  // get id of any existing element with class of "theBackground"
-  let existingID = document.getElementsByClassName("theBackground");
-
-  // check if we have one, or more - what happens if we have more? do we get an array or null or just the first found - so many questions so little time.
-  // check if id is the same as current displayed image - if so just exit
+  // clear any elements within the background container
+  // I'll need to change this later if I add a transition effect between changing backgrounds
+  document.getElementById("backgroundID").innerHTML = "";
 
   // make img element
   let newImage = document.createElement("img");
@@ -55,11 +53,32 @@ function populateThumbnails() {
   // loop through all the images in the array and add each one to the container
   for (let i = 0; i < mediaArray.length; i++) {
     // create the element to hold the thumbnail
-    let newThumb = document.createElement("img");
-    // set the src
+    const newThumb = document.createElement("img");
+
     newThumb.setAttribute("src", mediaArray[i].imageSrc);
+    //  maybe text to the alt text to include its function to change the background image
+    newThumb.setAttribute("alt", mediaArray[i].imageAlt);
+    newThumb.setAttribute("id", mediaArray[i].imageID);
+
     // TODO temp image size until CSS done
     newThumb.setAttribute("width", "50");
+
+    // attach listener to the element
+    newThumb.addEventListener("click", function (event) {
+      const idx = event.target.id;
+
+      // leaving the below comment in, is was used to test for expected behavior
+
+      //   console.log(
+      //     "id from the event listener '",
+      //     idx,
+      //     "' is type of ",
+      //     typeof idx
+      //   );
+
+      updateBackground(Number(idx));
+    });
+    // attach the element to the container
     document.getElementById("thumbnailsID").appendChild(newThumb);
   }
 }

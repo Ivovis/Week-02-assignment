@@ -10,10 +10,18 @@ An accessible image gallery following a mobile-first approach and responsive des
 
 Created two wire frames one for mobile
 
-<img src="./media/mobile-wireframe.png">
+<img src="./misc/mobile-wireframe.png">
 
 the other for desktop
 
-<img src="./media/Desktop-wireframe.png">
+<img src="./misc/Desktop-wireframe.png">
 
 - so far so good no hurdles other than using the http link to clone the repo - fixed.
+
+---
+
+Checkpoint 2025 05 10 1310
+
+I now have functionality, clicking a thumbnail will change the background image (its not a background yet - CSS to come)
+
+<img src="./misc/CheckPointImage1.png">
