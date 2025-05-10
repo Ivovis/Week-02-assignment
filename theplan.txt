@@ -15,6 +15,7 @@ create a desktop wireframe
 js - create a media array to hold information about the gallery contents
     including filename and alternative text for each and the image index within the array    
     I could include a function here to loop through the array and update the id's to match the correct index, this would allow adding images to the gallery later
+    just use 3 or 4 to test
 
 create a function to update the background image in the background container
     look for existing elements that have a class name used for the background image -> get its ID
@@ -27,8 +28,37 @@ Create a function that can populate the thumbnail container with images containe
     attach the image
     attach the alt text
     attach a listener for mouse click that will call the the update background function passing the array index of the image to use for the update
-        
+
 At this point the css is mostly undefined but I want to have the call backs working and then work on the CSS to present what is needed
 
-       
-Note this would normally be excluded from git
+-----
+
+updated plan:
+
+I now have working thumbnails - clicking on them changes the background image.
+
+not quite ready for CSS
+
+Add the rest of images
+Add a scrollable container for the thumbnails
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Note this file would normally be excluded from git
