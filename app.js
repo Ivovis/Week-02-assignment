@@ -1,3 +1,4 @@
+// I bet theres a way to place this in an external file!
 const mediaArray = [
   {
     imageID: 0,
@@ -77,6 +78,8 @@ const mediaArray = [
   },
 ];
 
+let currentImageIndex = 0;
+
 function updateBackground(idIndex) {
   if (idIndex >= mediaArray.length || idIndex < 0) {
     console.log("updateBackground called with out of range index - ignored");
@@ -111,5 +114,35 @@ function populateThumbnails() {
   }
 }
 
-populateThumbnails();
-updateBackground(0);
+// there seems to be some debate over using document or window onload
+// it seems that window is better supported at this time
+window.onload = function () {
+  populateThumbnails();
+  updateBackground(currentImageIndex);
+
+  // attach call function to the thumbnailsID container to handle arrow key presses
+  document
+    .getElementById("thumbnailsID")
+    .addEventListener("keydown", function (event) {
+      console.log("Key down event:", event);
+      console.log("the key", event.key);
+
+      if (
+        (event.key === "ArrowUp" || event.key === "ArrowLeft") &&
+        currentImageIndex > 0
+      ) {
+        currentImageIndex--;
+        console.log("new index will be", currentImageIndex);
+        updateBackground(currentImageIndex);
+      }
+
+      if (
+        (event.key === "ArrowDown" || event.key === "ArrowRight") &&
+        currentImageIndex < mediaArray.length - 1
+      ) {
+        currentImageIndex++;
+        console.log("new index will be", currentImageIndex);
+        updateBackground(currentImageIndex);
+      }
+    });
+};
