@@ -10,11 +10,11 @@ An accessible image gallery following a mobile-first approach and responsive des
 
 Created two wire frames one for mobile
 
-<img src="./misc/mobile-wireframe.png">
+<img src="./misc/mobile-wireframe.png" width="150px">
 
 the other for desktop
 
-<img src="./misc/Desktop-wireframe.png">
+<img src="./misc/Desktop-wireframe.png" width="300px">
 
 - so far so good no hurdles other than using the http link to clone the repo - fixed.
 
@@ -24,7 +24,7 @@ Checkpoint 2025 05 10 1310
 
 I now have functionality, clicking a thumbnail will change the background image (its not a background yet - CSS to come)
 
-<img src="./misc/CheckPointImage1.png">
+<img src="./misc/CheckPointImage1.png" width="300">
 
 ---
 
@@ -32,6 +32,20 @@ Checkpoint 2025 05 10 1546
 
 Really struggling with the CSS I have managed to get the thumbnails element to the sit on top of the background element and I seem to be able to place it on the screen where I want it, getting the result and understanding how I got the result are yet to be friends - more time needed after a break.
 
-<img src="./misc/checkpoint2.png">
+<img src="./misc/checkpoint2.png" width="300px">
+
+---
+
+Checkpoint 2025 05 11 1000
+
+I really got lost in the weeds trying to keep dark mode and light mode looking how I want - I have abandoned this for now and expect the browser to be using no or light mode. - lesson learned I should have focused on the requirements, as a dark mode user I got distracted, using alternative 'normal' browser for assignments from now on.
+
+Requirements
+
+- Its responsive, but not in the way I want
+- I have alt text for all the images
+- I have event handlers that work fine with a mouse on a desktop, but tabbing the page fails at this time
+
+<img src="./misc/CheckPoint3.png" width="300px">
 
 ---

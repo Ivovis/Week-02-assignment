@@ -1,3 +1,7 @@
+:root {
+  color-scheme: light dark;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -6,7 +10,7 @@
 
 #thumbnailsID {
   height: 80vh;
-  width: 20vw;
+  width: 10vw;
 
   display: flex;
   position: absolute;
@@ -16,29 +20,51 @@
 
   z-index: 100;
 
-  padding-top: 10vh;
-  padding-bottom: 10vh;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
   background-color: white;
-  left: 10%;
+  left: 1%;
   transform: translateY(10vh);
   overflow-x: hidden;
   overflow-y: scroll;
 }
-.body#thumbnails {
-  padding-top: 10vh;
-}
-.thumbnail {
-  width: 20vw;
-  gap: 5px;
 
-  background-color: red;
+.thumbnail {
+  width: 10vw;
+  background-color: rgb(238, 237, 243);
   cursor: pointer;
 }
 
 #backgroundID {
+  display: flex;
+  position: absolute;
+  background-size: cover;
   height: 100vh;
-  width: 100wh;
-  object-fit: fill;
-  color: black;
-  background-color: blue;
 }
+
+@media (width >= 800) {
+  #backgroundID {
+    background-color: red;
+  }
+}
+
+/* 
+@media (prefers-color-scheme: dark) {
+  #backgroundID {
+    background-color: rgb(102, 102, 102);
+  }
+  .thumbnail {
+    background-color: rgb(148, 148, 148);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .body {
+    background-color: rgb(255, 255, 255);
+  }
+
+  .thumbnail {
+    background-color: rgb(244, 244, 245);
+  }
+} */
