@@ -62,18 +62,20 @@ Final Thoughts:
 
 The objectives:
 
-- responsive design: I am now happy with the result
-- Alt text: I'm not going to win any prises but they have all be added.
+- Responsive design: I am now happy with the result, could have done better on image placement for very small devices.
+- Alt text: I'm not going to win any literature prises but they have all be added.
 - Event handlers: I guess I got this right as the page is doing what I wanted it to do. I will not be surprised if I failed best practices!
 
 I moved the location of the thumbnail bar for desktop sizes to the bottom of the screen the wire frame plan had it placed it at the top.
 
-Another issue the published page on github does not include all the images, they are all present and work correctly locally.
+Another issue: the published page on github does not include all the images, they are all present and work correctly locally.
 
-The images were all created by me with AI assistance some time late last year (I have over 2300) as bitmaps and I wrote python scripts to convert them to SVG's and give them all the same size, in reflection, this made this assignment a little easier because image download times and scaling benefit from SVG format.
+The images were all created by me with AI assistance some time late last year (I have over 2300) as bitmaps and I wrote python scripts to convert them to SVG's and give them all the same size, in/on reflection using SVG's made this assignment a little easier because image download times and scaling benefit from SVG format, I did not need to resize as I would have needed to using any of the other formats.
 
 More I could have (will do later after assignment marking) done, the thumbnail bar needs to center the active item, on screen resizing it can disappear.
 
 unresolved issue - when the screen is over a certain size I can no longer tab into the thumbnail bar, I suspect this will be a tab order issue.
 
 ---
+
+update the github pages issue has been resolved, missing. on some of the image paths.

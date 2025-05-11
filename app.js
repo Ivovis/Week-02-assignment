@@ -22,58 +22,58 @@ const mediaArray = [
   },
   {
     imageID: 4,
-    imageSrc: "/media/2024-12-05_13-49-49_8735-Chicken-0008.svg",
+    imageSrc: "./media/2024-12-05_13-49-49_8735-Chicken-0008.svg",
     imageAlt: "A cute Chicken facing directly at you.",
   },
   {
     imageID: 5,
-    imageSrc: "/media/2024-12-04_12-38-54_8810-Rabbit-0011.svg",
+    imageSrc: "./media/2024-12-04_12-38-54_8810-Rabbit-0011.svg",
     imageAlt: "A Rabbit with long ears, facing left",
   },
   {
     imageID: 6,
-    imageSrc: "/media/2024-12-04_13-36-31_7882-Elephant-0001.svg",
+    imageSrc: "./media/2024-12-04_13-36-31_7882-Elephant-0001.svg",
     imageAlt: "A majestic elephant, facing you front on",
   },
   {
     imageID: 7,
-    imageSrc: "/media/2024-12-04_17-08-36_3238-BearLogo-0070.svg",
+    imageSrc: "./media/2024-12-04_17-08-36_3238-BearLogo-0070.svg",
     imageAlt: "A face of a friendly bear, the kind used for logo",
   },
   {
     imageID: 8,
-    imageSrc: "/media/2024-12-02_16-59-55_3802-Frogs-0049.svg",
+    imageSrc: "./media/2024-12-02_16-59-55_3802-Frogs-0049.svg",
     imageAlt: "A frog, facing left",
   },
   {
     imageID: 9,
-    imageSrc: "/media/2024-12-05_13-03-06_9318-Cat-0014.svg",
+    imageSrc: "./media/2024-12-05_13-03-06_9318-Cat-0014.svg",
     imageAlt: "A small young cat, waiting for attention",
   },
   {
     imageID: 10,
-    imageSrc: "/media/2024-12-02_17-38-17_2518-Squirrels-0018.svg",
+    imageSrc: "./media/2024-12-02_17-38-17_2518-Squirrels-0018.svg",
     imageAlt:
       "A Squirrel sitting on its hind legs, with front paws raised as if eating.",
   },
   {
     imageID: 11,
-    imageSrc: "/media/2024-12-04_12-36-06_6434-Rabbit-0004.svg",
+    imageSrc: "./media/2024-12-04_12-36-06_6434-Rabbit-0004.svg",
     imageAlt: "A cute bunny sitting, facing you",
   },
   {
     imageID: 12,
-    imageSrc: "/media/2024-12-04_14-17-49_8608-Elephant-0085.svg",
+    imageSrc: "./media/2024-12-04_14-17-49_8608-Elephant-0085.svg",
     imageAlt: "An elephant, appears to be sitting,facing you",
   },
   {
     imageID: 13,
-    imageSrc: "/media/2024-12-04_16-39-36_8198-BearLogo-0047.svg",
+    imageSrc: "./media/2024-12-04_16-39-36_8198-BearLogo-0047.svg",
     imageAlt: "A small teddy bear, facing you",
   },
   {
     imageID: 14,
-    imageSrc: "/media/2024-12-05_13-50-37_2575-Chicken-0009.svg",
+    imageSrc: "./media/2024-12-05_13-50-37_2575-Chicken-0009.svg",
     imageAlt: "An adult chicken standing, facing left",
   },
 ];
