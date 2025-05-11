@@ -57,3 +57,23 @@ I have finally managed to get the thumbnail bar working, I have added a border t
 The CSS is still ugly as hell and thats what I'll work on next.
 
 ---
+
+Final Thoughts:
+
+The objectives:
+
+- responsive design: I am now happy with the result
+- Alt text: I'm not going to win any prises but they have all be added.
+- Event handlers: I guess I got this right as the page is doing what I wanted it to do. I will not be surprised if I failed best practices!
+
+I moved the location of the thumbnail bar for desktop sizes to the bottom of the screen the wire frame plan had it placed it at the top.
+
+Another issue the published page on github does not include all the images, they are all present and work correctly locally.
+
+The images were all created by me with AI assistance some time late last year (I have over 2300) as bitmaps and I wrote python scripts to convert them to SVG's and give them all the same size, in reflection, this made this assignment a little easier because image download times and scaling benefit from SVG format.
+
+More I could have (will do later after assignment marking) done, the thumbnail bar needs to center the active item, on screen resizing it can disappear.
+
+unresolved issue - when the screen is over a certain size I can no longer tab into the thumbnail bar, I suspect this will be a tab order issue.
+
+---

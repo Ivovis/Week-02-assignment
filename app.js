@@ -96,8 +96,6 @@ function updateBackground(idIndex) {
 }
 
 function populateThumbnails() {
-  const tc = document.getElementById("thumbnailsID");
-
   for (let i = 0; i < mediaArray.length; i++) {
     const newThumb = document.createElement("img");
 
@@ -117,11 +115,11 @@ function populateThumbnails() {
   }
 }
 
+// a bit of a hack but gets the job done when clicking a thumbnail
 function clearAllBorders() {
   let thumbs = document
     .getElementById("thumbnailsID")
     .getElementsByClassName("thumbnail");
-  console.log("click clearing these;", thumbs);
   for (let i = 0; i < thumbs.length; i++) {
     thumbs[i].setAttribute("border", "");
   }

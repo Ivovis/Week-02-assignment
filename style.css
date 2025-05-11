@@ -1,6 +1,6 @@
-:root {
+/* :root {
   color-scheme: light dark;
-}
+} */
 
 * {
   padding: 0;
@@ -11,24 +11,20 @@
 #thumbnailsID {
   height: 80vh;
   width: 10vw;
-
+  max-width: 40px;
   display: flex;
   position: absolute;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-
   z-index: 100;
-
   padding-top: 5px;
   padding-bottom: 5px;
-
   background-color: white;
   left: 1%;
   transform: translateY(10vh);
   overflow-x: hidden;
   overflow-y: scroll;
-
   padding: 10px;
 }
 
@@ -36,18 +32,35 @@
   width: 10vw;
   background-color: rgb(238, 237, 243);
   cursor: pointer;
+  max-width: 40px;
 }
 
 #backgroundID {
   display: flex;
-  position: absolute;
-  background-size: cover;
+  position: centered;
+  justify-content: space-around;
+  background-color: rgba(131, 127, 127, 0);
   height: 100vh;
 }
-
-@media (width >= 800) {
-  #backgroundID {
-    background-color: red;
+@media (min-width: 680px) {
+  #thumbnailsID {
+    height: 10vh;
+    width: 80vw;
+    max-width: 80%;
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: white;
+    bottom: 1%;
+    transform: translateX(10vh);
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 10px;
   }
 }
 
