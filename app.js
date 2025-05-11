@@ -100,17 +100,30 @@ function populateThumbnails() {
 
   for (let i = 0; i < mediaArray.length; i++) {
     const newThumb = document.createElement("img");
+
     newThumb.setAttribute("src", mediaArray[i].imageSrc);
-    //TODO  maybe text to the alt text to include its function to change the background image
     newThumb.setAttribute("alt", mediaArray[i].imageAlt);
     newThumb.setAttribute("id", mediaArray[i].imageID);
     newThumb.setAttribute("class", "thumbnail");
     newThumb.addEventListener("click", function (event) {
       const idx = event.target.id;
+      clearAllBorders();
+      this.setAttribute("border", "3px solid");
+      currentImageIndex = Number(idx);
       updateBackground(Number(idx));
     });
 
     document.getElementById("thumbnailsID").appendChild(newThumb);
+  }
+}
+
+function clearAllBorders() {
+  let thumbs = document
+    .getElementById("thumbnailsID")
+    .getElementsByClassName("thumbnail");
+  console.log("click clearing these;", thumbs);
+  for (let i = 0; i < thumbs.length; i++) {
+    thumbs[i].setAttribute("border", "");
   }
 }
 
@@ -119,29 +132,44 @@ function populateThumbnails() {
 window.onload = function () {
   populateThumbnails();
   updateBackground(currentImageIndex);
+  document
+    .getElementById("thumbnailsID")
+    .getElementsByClassName("thumbnail")
+    [currentImageIndex].setAttribute("border", "3px solid");
 
   // attach call function to the thumbnailsID container to handle arrow key presses
   document
     .getElementById("thumbnailsID")
     .addEventListener("keydown", function (event) {
-      console.log("Key down event:", event);
-      console.log("the key", event.key);
+      // console.log("Key down event:", event);
+      // console.log("the key", event.key);
 
+      // reacting to ArrowUp and left, only if currentImageIndex is in range
       if (
         (event.key === "ArrowUp" || event.key === "ArrowLeft") &&
         currentImageIndex > 0
       ) {
+        const thumbs = document
+          .getElementById("thumbnailsID")
+          .getElementsByClassName("thumbnail");
+        thumbs[currentImageIndex].setAttribute("border", ""); // clear the old
         currentImageIndex--;
-        console.log("new index will be", currentImageIndex);
+        thumbs[currentImageIndex].setAttribute("border", "3px solid"); // highlight the new
         updateBackground(currentImageIndex);
       }
 
+      // reacting to ArrowDown and right, only if currentImageIndex is in range
       if (
         (event.key === "ArrowDown" || event.key === "ArrowRight") &&
         currentImageIndex < mediaArray.length - 1
       ) {
+        // get array of thumbnail images within thumbnailsID element
+        const thumbs = document
+          .getElementById("thumbnailsID")
+          .getElementsByClassName("thumbnail");
+        thumbs[currentImageIndex].setAttribute("border", ""); // clear the old
         currentImageIndex++;
-        console.log("new index will be", currentImageIndex);
+        thumbs[currentImageIndex].setAttribute("border", "3px solid"); // highlight the new
         updateBackground(currentImageIndex);
       }
     });

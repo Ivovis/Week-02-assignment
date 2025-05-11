@@ -49,3 +49,11 @@ Requirements
 <img src="./misc/CheckPoint3.png" width="300px">
 
 ---
+
+Checkpoint 2025 11 1329
+
+I have finally managed to get the thumbnail bar working, I have added a border to the currently selected thumbnail, this will change with both clicks and arrow key presses.
+
+The CSS is still ugly as hell and thats what I'll work on next.
+
+---
